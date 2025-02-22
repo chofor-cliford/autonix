@@ -11,7 +11,7 @@ export default function Home() {
           <p>Explore the cars you might like</p>
         </div>
 
-        <div className="home__filter">
+        <div className="home__filters">
           <SearchBar />
 
           <div className="home__filter-container">
