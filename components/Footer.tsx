@@ -14,8 +14,8 @@ const Footer = () => {
             alt="logo"
             className="object-contain"
           />
-          <p className="text-base text-gray-700">
-            Autonix 2024 <br />
+          <p className="text-base text-gray-700 ">
+            Autonix 2024 <br /> 
             All Rights Reserved &copy;
           </p>
         </div>
