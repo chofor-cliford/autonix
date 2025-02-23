@@ -1,9 +1,9 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import { CarCardProps } from "@/types";
-import { calculateCarRent, fetchCarImage, generateCarImageUrl } from "@/utils";
+import { calculateCarRent } from "@/utils";
 import CustomButton from "./CustomButton";
 import CarDetails from "./CarDetails";
 
@@ -25,6 +25,8 @@ const CarCard = ({ car }: CarCardProps) => {
   const carRent = calculateCarRent(city_mpg, year);
 
   const [isOpen, setIsOpen] = useState(false);
+  // The API is not working, so we will use a placeholder image
+  // const imageUrl = generateCarImageUrl(car);
 
   return (
     <div className="car-card group">
@@ -42,7 +44,7 @@ const CarCard = ({ car }: CarCardProps) => {
 
       <div className="relative w-full h-40 my-3 object-contain">
         <Image
-          src="/hero.png"
+          src={"/hero.png"}
           alt="Car Model"
           fill
           priority
