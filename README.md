@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## 📌 Table of Contents
 
-## Getting Started
+1. 🚗 [Introduction](#introduction)
+2. 🛠️ [Tech Stack](#tech-stack)
+3. 🌟 [Features](#features)
+4. 🚀 [Quick Start](#quick-start)
+5. 🔗 [Links](#links)
 
-First, run the development server:
+## 🤖 Introduction
+
+Autonix is a modern car rental and booking platform built with Next.js, providing a seamless and efficient experience for users to explore, book, and rent vehicles with ease. It offers an intuitive interface, powerful filtering, and optimized performance to enhance the car rental process.
+
+## 🛠️ Tech Stack
+
+- Next.js
+- TypeScript
+- Tailwind CSS
+- API Integration for vehicle data
+
+## 🌟 Features
+
+🔑 **Explore & Search**: Browse through a vast selection of vehicles with detailed specifications and high-quality images.
+
+🔑 **Advanced Filtering**: Search cars based on brand, model, year, fuel type, and rental price range.
+
+🔑 **Seamless Booking**: Rent a car in just a few clicks with a user-friendly booking process.
+
+🔑 **Optimized Performance**: Leverages server-side rendering for fast load times and better SEO.
+
+🔑 **Responsive Design**: Works smoothly across all devices, from desktops to smartphones.
+
+🔑 **Secure & Reliable**: Ensures a secure and trustworthy car rental experience.
+
+## 🚀 Quick Start
+
+Follow these steps to run Autonix locally:
+
+**Prerequisites**
+
+- [Git](https://git-scm.com/)
+- [Node.js](https://nodejs.org/en)
+- [npm](https://www.npmjs.com/)
+
+**Cloning the Repository**
+
+```bash
+git clone https://github.com/chofor-cliford/autonix.git
+cd autonix
+```
+
+**Installation**
+
+```bash
+npm install
+```
+
+**Set Up Environment Variables**
+
+Create a `.env` file in the root directory and add:
+
+```env
+NEXT_PUBLIC_API_KEY=your_api_key
+```
+
+**Run the Project**
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the app.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🔗 Links
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- [Live Demo](https://autonix.com)
+- [Documentation](https://docs.autonix.com)
+- [Support](https://support.autonix.com)
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
