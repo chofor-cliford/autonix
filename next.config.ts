@@ -1,9 +1,15 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
+const nextConfig = {
   images: {
-    domains: ["cdn.imagin.studio", "www.auto-data.net"],
-   
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'cdn.imagin.studio',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.auto-data.net',
+      },
+    ],
   },
   eslint: {
     // Warning: This allows production builds to successfully complete even if

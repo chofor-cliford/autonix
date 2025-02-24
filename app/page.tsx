@@ -7,7 +7,7 @@ import { fetchCars } from "@/utils";
 export default async function Home({
   searchParams,
 }: {
-  searchParams: FilterProps;
+  searchParams: FilterProps | Promise<FilterProps>;
 }) {
 
   const params = await searchParams;
