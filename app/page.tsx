@@ -9,12 +9,15 @@ export default async function Home({
 }: {
   searchParams: FilterProps;
 }) {
+
+  const params = await searchParams;
+
   const allCars = await fetchCars({
-    model: searchParams.model || "",
-    manufacturer: searchParams.manufacturer || "Toyota",
-    year: searchParams.year ? Number(searchParams.year) : 0,
-    fuel: searchParams.fuel || "",
-    limit: searchParams.limit ? Number(searchParams.limit) : 1,
+    model: params.model || "",
+    manufacturer: params.manufacturer || "Toyota",
+    year: params.year || 0,
+    fuel: params.fuel || "",
+    limit: params.limit || 0,
   });
 
   const isDataEmpty = !Array.isArray(allCars) || allCars.length < 1 || !allCars;
@@ -52,8 +55,8 @@ export default async function Home({
             </div>
 
             <ShowMore
-              pageNumber={(searchParams.limit || 10) / 10}
-              isNext={(searchParams.limit || 0) > allCars.length}
+              pageNumber={(params.limit || 10) / 10}
+              isNext={(params.limit || 0) > allCars.length}
             />
           </section>
         )}
