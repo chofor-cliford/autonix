@@ -9,12 +9,15 @@ export default async function Home({
 }: {
   searchParams: FilterProps;
 }) {
+  // Wrap searchParams in a promise to satisfy the type
+  const params = await Promise.resolve(searchParams);
+
   const allCars = await fetchCars({
-    model: searchParams.model || "",
-    manufacturer: searchParams.manufacturer || "Toyota",
-    year: searchParams.year || 0,
-    fuel: searchParams.fuel || "",
-    limit: searchParams.limit || 0,
+    model: params.model || "",
+    manufacturer: params.manufacturer || "Toyota",
+    year: params.year || 0,
+    fuel: params.fuel || "",
+    limit: params.limit || 0,
   });
 
   const isDataEmpty = !Array.isArray(allCars) || allCars.length < 1 || !allCars;
